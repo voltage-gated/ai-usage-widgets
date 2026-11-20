@@ -8,13 +8,15 @@ Windows 작업표시줄에서 Codex와 Claude의 잔여 한도를 확인하거�
 
 | 다운로드 | 주요 기능 |
 | --- | --- |
-| [V5 다운로드](https://github.com/voltage-gated/codex-usage-pet-overlay/releases/download/widget-v5/AI-Usage-Taskbar-Dock-v5.zip) | Claude CLI와 데스크톱 앱에서 확인한 값 중 더 최근의 잔여량을 표시합니다. 사용량 추이를 그래프로 보고, 관측 기록이 충분하면 예상 소진 시각도 확인할 수 있습니다. |
-| [V4 다운로드](https://github.com/voltage-gated/codex-usage-pet-overlay/releases/download/widget-v4/AI-Usage-Taskbar-Dock-v4.zip) | 5시간·주간 잔여량을 두 줄 픽셀 게이지로 표시합니다. |
-| [V3 다운로드](https://github.com/voltage-gated/codex-usage-pet-overlay/releases/download/widget-v3/AI-Usage-Taskbar-Dock-v3.zip) | Claude 계정 조회 옵션과 활동·시스템 상세 카드를 제공합니다. |
-| [V2 다운로드](https://github.com/voltage-gated/codex-usage-pet-overlay/releases/download/widget-v2/AI-Usage-Taskbar-Dock-v2.zip) | Codex와 Claude를 각각 또는 함께 표시합니다. Claude 데스크톱의 로컬 기록을 활용합니다. |
-| [V1 다운로드](https://github.com/voltage-gated/codex-usage-pet-overlay/releases/download/widget-v1/AI-Usage-Taskbar-Dock-v1.zip) | 작업표시줄 시계 옆에서 Codex 주간 잔여량을 확인하고, 위젯을 펼쳐 다음 리셋 시각을 볼 수 있습니다. |
+| [V5 다운로드](https://github.com/voltage-gated/ai-usage-widgets/releases/download/widget-v5/AI-Usage-Taskbar-Dock-v5.zip) | Claude CLI와 데스크톱 앱에서 확인한 값 중 더 최근의 잔여량을 표시합니다. 사용량 추이를 그래프로 보고, 관측 기록이 충분하면 예상 소진 시각도 확인할 수 있습니다. |
+| [V4 다운로드](https://github.com/voltage-gated/ai-usage-widgets/releases/download/widget-v4/AI-Usage-Taskbar-Dock-v4.zip) | 5시간·주간 잔여량을 두 줄 픽셀 게이지로 표시합니다. |
+| [V3 다운로드](https://github.com/voltage-gated/ai-usage-widgets/releases/download/widget-v3/AI-Usage-Taskbar-Dock-v3.zip) | Claude 계정 조회 옵션과 활동·시스템 상세 카드를 제공합니다. |
+| [V2 다운로드](https://github.com/voltage-gated/ai-usage-widgets/releases/download/widget-v2/AI-Usage-Taskbar-Dock-v2.zip) | Codex와 Claude를 각각 또는 함께 표시합니다. Claude 데스크톱의 로컬 기록을 활용합니다. |
+| [V1 다운로드](https://github.com/voltage-gated/ai-usage-widgets/releases/download/widget-v1/AI-Usage-Taskbar-Dock-v1.zip) | 작업표시줄 시계 옆에서 Codex 주간 잔여량을 확인하고, 위젯을 펼쳐 다음 리셋 시각을 볼 수 있습니다. |
 
-**실행 방법** — Windows 11과 Python 3.13 기준입니다. 원하는 ZIP을 풀고, 그 안의 폴더에서 PowerShell을 열어 다음 명령을 실행하세요.
+### 위젯 실행 방법
+
+Windows 11과 Python 3.13 기준입니다. 원하는 ZIP을 풀고, 그 안의 폴더에서 PowerShell을 열어 다음 명령을 실행하세요.
 
 ```powershell
 py -3.13 -m pip install -r requirements.txt
@@ -25,7 +27,7 @@ py -3.13 -m pip install -r requirements.txt
 
 ## Codex 데스크톱 펫
 
-바탕화면에 좋아하는 펫을 놓아두면, 펫 옆에 Codex 잔여량과 다음 리셋 시각이 함께 표시됩니다. [펫 배포판 다운로드](https://github.com/voltage-gated/codex-usage-pet-overlay/releases/tag/v0.1.0)
+바탕화면에 좋아하는 펫을 놓아두면, 펫 옆에 Codex 잔여량과 다음 리셋 시각이 함께 표시됩니다. [펫 ZIP 다운로드](https://github.com/voltage-gated/ai-usage-widgets/releases/download/v0.1.0/codex-pet-overlay-dist.zip)
 
 ### 펫 기능
 
@@ -40,7 +42,7 @@ py -3.13 -m pip install -r requirements.txt
 
 Windows 10 또는 11, Python 3.10 이상, 로그인된 Codex CLI가 필요합니다.
 
-1. [Releases](https://github.com/voltage-gated/codex-usage-pet-overlay/releases/tag/v0.1.0)에서 `codex-pet-overlay-dist.zip`을 다운로드하고 압축을 풉니다.
+1. [펫 릴리스](https://github.com/voltage-gated/ai-usage-widgets/releases/tag/v0.1.0)에서 `codex-pet-overlay-dist.zip`을 다운로드하고 압축을 풉니다.
 2. `install-deps.bat`을 한 번 실행해 Pillow를 설치합니다.
 3. `start-pet.bat`을 실행합니다.
 
@@ -52,4 +54,4 @@ Windows 10 또는 11, Python 3.10 이상, 로그인된 Codex CLI가 필요합니
 
 ## 안내
 
-이 프로젝트는 OpenAI가 제작하거나 승인한 공식 제품이 아닙니다. 포함된 캐릭터와 폰트의 권리는 각각의 원저작자에게 있습니다.
+이 프로젝트는 커뮤니티에서 만든 비공식 도구입니다. 포함된 캐릭터와 폰트의 권리는 각각의 원저작자에게 있습니다.
